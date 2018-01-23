@@ -1,0 +1,3 @@
+accessing
+horizontalPosition
+	^ horizontalPosition

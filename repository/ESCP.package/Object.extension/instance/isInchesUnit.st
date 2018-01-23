@@ -1,0 +1,3 @@
+*ESCP
+isInchesUnit
+	^ false

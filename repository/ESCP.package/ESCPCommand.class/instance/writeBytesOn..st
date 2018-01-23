@@ -1,0 +1,3 @@
+writing
+writeBytesOn: aBinaryStream
+	self subclassResponsibility

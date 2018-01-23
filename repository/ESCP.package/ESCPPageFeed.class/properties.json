@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ESCPCommand",
+	"category" : "ESCP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ESCPPageFeed",
+	"type" : "normal"
+}

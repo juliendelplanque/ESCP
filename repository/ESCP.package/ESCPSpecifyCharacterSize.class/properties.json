@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ESCPCommand",
+	"category" : "ESCP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"characterSize"
+	],
+	"name" : "ESCPSpecifyCharacterSize",
+	"type" : "normal"
+}
