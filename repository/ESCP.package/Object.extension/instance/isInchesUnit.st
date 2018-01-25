@@ -1,3 +1,0 @@
-*ESCP
-isInchesUnit
-	^ false
