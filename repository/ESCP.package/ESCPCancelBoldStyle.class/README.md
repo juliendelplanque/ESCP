@@ -1,0 +1,1 @@
+Cancel bold style that was applied to the text text before this command.

@@ -1,0 +1,1 @@
+Apply italic style to the text following this command.

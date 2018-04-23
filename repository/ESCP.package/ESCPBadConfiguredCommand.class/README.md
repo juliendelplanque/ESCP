@@ -1,0 +1,1 @@
+I am the error raised when an ESCP command is bad configured and thus, can not be serialized as a byte array.
