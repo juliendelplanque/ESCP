@@ -1,1 +1,0 @@
-An ESCPSpecifyCharacterSizeTest is a test class for testing the behavior of ESCPSpecifyCharacterSize

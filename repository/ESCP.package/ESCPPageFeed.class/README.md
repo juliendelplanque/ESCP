@@ -1,1 +1,0 @@
-Create a new page. This cause the printer to cut the paper.

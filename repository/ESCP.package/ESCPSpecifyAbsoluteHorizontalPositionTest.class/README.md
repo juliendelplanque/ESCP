@@ -1,1 +1,0 @@
-An ESCPSpecifyAbsoluteHorizontalPositionTest is a test class for testing the behavior of ESCPSpecifyAbsoluteHorizontalPosition

@@ -1,1 +1,0 @@
-Apply bold style to the text following this command.
