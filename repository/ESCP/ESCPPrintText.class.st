@@ -29,5 +29,5 @@ ESCPPrintText >> writeBytesOn: aBinaryStream [
 	self string isString
 		ifFalse: [ self commandIsBadConfigured: #string ].
 	aBinaryStream
-		nextPut: self string asByteArray
+		nextPutAll: self string asByteArray
 ]
