@@ -21,11 +21,11 @@ ESCPSpecifyLandscapeOrientation >> isLandscape: anObject [
 ESCPSpecifyLandscapeOrientation >> writeBytesOn: aBinaryStream [
 	self isLandscape ifNil: [ self commandIsBadConfigured: #isLandscape ].
 	aBinaryStream
-		<< self esc;
-		<< $i codePoint;
-		<< $L codePoint.
+		nextPut: self esc;
+		nextPut: $i codePoint;
+		nextPut: $L codePoint.
 	self isLandscape
-		ifTrue: [ aBinaryStream << 1 ]
-		ifFalse: [ aBinaryStream << 0 ]
+		ifTrue: [ aBinaryStream nextPut: 1 ]
+		ifFalse: [ aBinaryStream nextPut: 0 ]
 		
 ]

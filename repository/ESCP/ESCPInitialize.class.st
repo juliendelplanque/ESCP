@@ -7,6 +7,6 @@ Class {
 { #category : #writing }
 ESCPInitialize >> writeBytesOn: aBinaryStream [
 	aBinaryStream
-		<< self esc;
-		<< $@ codePoint
+		nextPut: self esc;
+		nextPut: $@ codePoint
 ]

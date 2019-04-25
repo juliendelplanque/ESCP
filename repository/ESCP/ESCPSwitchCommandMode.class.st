@@ -22,9 +22,9 @@ ESCPSwitchCommandMode >> writeBytesOn: aBinaryStream [
 	(self commandMode isNotNil and: [ self commandMode isInteger ])
 		ifFalse: [ self commandIsBadConfigured: #commandMode ].
 	aBinaryStream
-		<< self esc;
-		<< $i codePoint;
-		<< $a codePoint;
-		<< self commandMode
+		nextPut: self esc;
+		nextPut: $i codePoint;
+		nextPut: $a codePoint;
+		nextPut: self commandMode
 		
 ]

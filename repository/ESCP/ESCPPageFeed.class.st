@@ -10,5 +10,5 @@ Class {
 { #category : #writing }
 ESCPPageFeed >> writeBytesOn: aBinaryStream [
 	aBinaryStream
-		<< 16r0C
+		nextPut: 16r0C
 ]

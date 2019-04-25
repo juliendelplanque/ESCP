@@ -10,6 +10,6 @@ Class {
 { #category : #writing }
 ESCPCancelBoldStyle >> writeBytesOn: aBinaryStream [
 	aBinaryStream
-		<< self esc;
-		<< 16r46
+		nextPut: self esc;
+		nextPut: 16r46
 ]

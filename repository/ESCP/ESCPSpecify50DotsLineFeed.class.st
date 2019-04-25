@@ -7,6 +7,6 @@ Class {
 { #category : #writing }
 ESCPSpecify50DotsLineFeed >> writeBytesOn: aBinaryStream [
 	aBinaryStream
-		<< self esc;
-		<< 16r32
+		nextPut: self esc;
+		nextPut: 16r32
 ]

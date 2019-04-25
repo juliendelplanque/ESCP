@@ -24,12 +24,12 @@ ESCPSpecifyAbsoluteVerticalPosition >> writeBytesOn: aBinaryStream [
 		or: [ (self verticalPosition between: 0 and: 32767) not ] ])
 		ifTrue: [ self commandIsBadConfigured: #verticalPosition ].
 	aBinaryStream
-		<< self esc;
-		<< $( codePoint;
-		<< $V codePoint;
-		<< 16r02;
-		<< 16r00;
-		<< (self verticalPosition % 256);
-		<< (self verticalPosition // 256)
+		nextPut: self esc;
+		nextPut: $( codePoint;
+		nextPut: $V codePoint;
+		nextPut: 16r02;
+		nextPut: 16r00;
+		nextPut: (self verticalPosition % 256);
+		nextPut: (self verticalPosition // 256)
 		
 ]

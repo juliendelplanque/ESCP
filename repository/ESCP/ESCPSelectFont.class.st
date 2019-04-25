@@ -25,8 +25,8 @@ ESCPSelectFont >> writeBytesOn: aBinaryStream [
 					and: [ (self fontNumber between: 9 and: 11) not ] ] ])
 		ifTrue: [ self commandIsBadConfigured: #fontNumber ].
 	aBinaryStream
-		<< self esc;
-		<< $k codePoint;
-		<< self fontNumber
+		nextPut: self esc;
+		nextPut: $k codePoint;
+		nextPut: self fontNumber
 		
 ]

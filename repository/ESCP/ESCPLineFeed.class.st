@@ -10,6 +10,6 @@ Class {
 { #category : #writing }
 ESCPLineFeed >> writeBytesOn: aBinaryStream [
 	aBinaryStream
-		<< Character lf codePoint
+		nextPut: Character lf codePoint
 		
 ]

@@ -10,6 +10,6 @@ Class {
 { #category : #writing }
 ESCPApplyItalicStyle >> writeBytesOn: aBinaryStream [
 	aBinaryStream
-		<< self esc;
-		<< 16r34
+		nextPut: self esc;
+		nextPut: 16r34
 ]

@@ -24,9 +24,9 @@ ESCPSpecifyAbsoluteHorizontalPosition >> writeBytesOn: aBinaryStream [
 		or: [ (self horizontalPosition between: 0 and: 65535) not ] ])
 		ifTrue: [ self commandIsBadConfigured: #horizontalPosition ].
 	aBinaryStream
-		<< self esc;
-		<< $$ codePoint;
-		<< (self horizontalPosition % 256);
-		<< (self horizontalPosition // 256)
+		nextPut: self esc;
+		nextPut: $$ codePoint;
+		nextPut: (self horizontalPosition % 256);
+		nextPut: (self horizontalPosition // 256)
 		
 ]

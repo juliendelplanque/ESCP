@@ -41,10 +41,10 @@ ESCPSelectBitImage >> writeBytesOn: aBinaryStream [
 		ifTrue: [ self commandIsBadConfigured: #m ]. 
 		
 	aBinaryStream
-		<< self esc;
-		<< $* codePoint;
-		<< self m;
-		<< (self bytes size % 256);
-		<< (self bytes size // 256);
-		<< self bytes
+		nextPut: self esc;
+		nextPut: $* codePoint;
+		nextPut: self m;
+		nextPut: (self bytes size % 256);
+		nextPut: (self bytes size // 256);
+		nextPut: self bytes
 ]

@@ -10,6 +10,6 @@ Class {
 { #category : #writing }
 ESCPApplyBoldStyle >> writeBytesOn: aBinaryStream [
 	aBinaryStream
-		<< self esc;
-		<< 16r45
+		nextPut: self esc;
+		nextPut: 16r45
 ]
