@@ -138,8 +138,7 @@ ESCPScript >> switchToESCPMode [
 
 { #category : #writing }
 ESCPScript >> writeBytesInFile: aFileReference [
-	aFileReference writeStreamDo: [ :s |
-		s binary.
+	aFileReference binaryWriteStreamDo: [ :s |
 		self writeBytesOn: s ]
 ]
 
